@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>이미지 표시하기</title>
+    </head>
+    <body>
+        <header>
+            <h1>회원가입</h1>
+        </header>
+
+        <main>
+            <form>
+                <fieldset>
+                    <legend>필수 입력 사항</legend>
+                    <ul>
+                        <li>이름: <input type="text" name="name"></li>
+                        <li>아이디: <input type="text" 
+                            placeholder="6자 이상 20자 미만 공백 없이 작성"
+                            name="id"></li>
+                        <li>비밀번호: <iput type="password"
+                            placeholder="대소문자로 입력해주세요" name="pw"></li>
+                        <li>이메일: <input type="email" name="email"></li>
+                        <li>전화번호: <input type="number" name="phone"></li>
+                        <li>출신지역: <select name="place">
+                            <option>서울</option>
+                            <option>인천</option>
+                            <option>경기</option>
+                            <option>기타</optnion>
+                        </select></li>
+                        <br>
+                        <input type="submit" value="가입하기">
+                        <input type="submit" value="취소">
+                    </ul>
+                </fieldset>
+            </form>
+
+            <fieldset>
+                <legend>취미</legend>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="coding" name="hobby">
+                        <label for="coding">코딩</label>
+                        <input type="checkbox" id="exercise" name="hobby">
+                        <label for="exercise">운동</label>
+                        <input type="checkbox" id="dance" name="hobby">
+                        <label for="dance">춤추기</label>
+                        <input type="checkbox" id="travel" name="hobby">
+                        <label for="travel">여행</label>
+                        <input type="checkbox" id="read" name="hobby">
+                        <label for="read">독서</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="male" name="sex">
+                        <label for="male">남</label>
+                        <input type="radio" id="female" name="sex">
+                        <label for="female">여</label>
+                        <input type="radio" id="secret" name="sex">
+                        <label for="secret">비밀</label>
+
+                    </li>
+                </ul>
+            </fieldset>
+        </main>
+
+    </body>
+</html>
